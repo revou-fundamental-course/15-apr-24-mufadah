@@ -1,5 +1,6 @@
 /* ini file Css */
 main {
+    text-align: center;
     background-image: url(https://asset-a.grid.id/crop/0x0:0x0/750x504/photo/2023/12/21/suhu-dan-temperaturjpeg-20231221082537.jpeg);
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -7,7 +8,8 @@ main {
     font-family: Arial, Helvetica, sans-serif;
     padding-left: 32px;
     padding-top: 32px;
-    padding-bottom: 64px;
+    padding-bottom: 32px;
+    padding-right: 32px;
 }
 section {
     padding-left: 10px;
@@ -19,7 +21,7 @@ section {
 }
 .main-section{
     padding: 16px;
-    border-radius: 4px;
+    border-radius: 6px;
 }
 .section-celcius {
     padding-top: 16px;
@@ -31,9 +33,11 @@ section {
     padding-top: 16px;
 }
 textarea {
+    box-shadow: 2px 2px 3px #666;
     resize: none;
     width: 35%;
     height: 75px;
+    border-radius: 4px;
 }
 .section-explanation {
     padding-top: 16px;
@@ -65,4 +69,24 @@ button {
 }
 .before-explanation {
     color: purple;
+}
+ol {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    height: 100px;
+}
+header {
+    font-size: 25px; 
+    font-family: Arial, sans-serif;
+    color: #fff; 
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #0ff, 0 0 70px #0ff, 0 0 80px #0ff, 0 0 100px #0ff, 0 0 150px #0ff; 
+}    
+body {
+    margin: 0;
+}
+#f-to-c {
+    display: none;
 }

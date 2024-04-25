@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <title>Temperature converter</title>
+    <script src="script.js"></script>
     <link rel="icon" type="image/x-icon" href="https://images.glints.com/unsafe/glints-dashboard.s3.amazonaws.com/company-logo/a32f81155cd0d4f16d36aef74f7d2644.png">
 </head>
 <body>
@@ -17,29 +18,68 @@
         <!--main section-->
         
         <section class="main-section">
-            <h3>masukan suhu derajat celcius (&deg;C) ke kotak dibawah, lalu klik tombol konversi <br>untuk mendapatkan hasil konversi dalam bentuk Fahrenheit (&deg;F) </h3>
+            <h4>Bagaimana cara mengonversi : </h4>
+            <ol>
+                <li>masukan satuan suhu yang ingin dikonversi. Baik derajat celcius (&deg;C) maupun Fahrenheit (&deg;F) ke kotak dibawah</li>
+                <li>klik tombol konversi untuk mendapatkan hasil</li>
+                <li>tunggu sebentar untuk mendapatkan hasil dari konversi suhu</li>
+            </ol>
+            <h3>Fungsi tombol dan cara pengisian</h3>
         </section>
-    
-        <section class="section-celcius"> 
-            <h3>Celcius (&deg;C)</h3>
-        </section>
-        <article>
-            <textarea rows="3"></textarea>
 
-            <div class="tombol">
-                <button id="button-convert">Convert</button> 
-                <button id="button-reset">Reset</button>
-                <button id="button-reverse">Reverse</button>
+        <div id="c-to-f">
+        <div>
+            <section class="section-celcius"> 
+                <h3>Celcius (&deg;C)</h3>
+            </section>
+            <article>
+                <textarea rows="3" id="c-to-f-input"></textarea>
             </div>
+                <div class="tombol">
+                    <button id="button-convert" type="button">Convert</button> 
+                    <button id="button-reset">Reset</button>
+                    <button id="button-reverse" onclick="reverse();" type="button">Reverse</button>
+                </div>
+                
+            </article>
+        
+        </div>
+        
+        <div>
+            <section class="section-Fahrenheit"> 
+                <h3>Fahrenheit (&deg;F)</h3>
+            </section>
+            <article>
+                <textarea rows="3"></textarea>
+            </div>
+        
+        </div>
+        <div id="f-to-c">
+            <div>
+                <section class="section-celcius"> 
+                    <h3>Celcius (&deg;C)</h3>
+                </section>
+                <article>
+                    <textarea rows="3"></textarea>
+                </div>
+                    <div class="tombol">
+                        <button id="button-convert" type="button">Convert</button> 
+                        <button id="button-reset">Reset</button>
+                        <button id="button-reverse" onclick="reverse();" type="button">Reverse</button>
+                    </div>
+                    
+                </article>
             
-        </article>
+            <div class="f-to-c">
+                <section class="section-Fahrenheit"> 
+                    <h3>Fahrenheit (&deg;F)</h3>
+                </section>
+                <article>
+                    <textarea rows="3"></textarea>
+            </div>
     
-        <section class="section-Fahrenheit"> 
-            <h3>Fahrenheit (&deg;F)</h3>
-        </section>
-        <article>
-            <textarea rows="3"></textarea>
-
+        </div>
+        
             <section class="section-result"> 
                 <h3>Cara Kalkulasi (&deg;C)</h3>
             </section>
